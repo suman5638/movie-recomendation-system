@@ -11,9 +11,9 @@ st.title("🎬 Movie Recommendation System")
 
 @st.cache_data
 def load_data():
-    movies = pd.read_csv("movies.csv")
-    tags = pd.read_csv("tags.csv")
-    links = pd.read_csv("links.csv")
+    movies = pd.read_csv("movies[1].csv")
+    tags = pd.read_csv("tags[1].csv")
+    links = pd.read_csv("links[1].csv")
 
     tag_data = tags.groupby('movieId')['tag'].apply(lambda x: " ".join(x)).reset_index()
     movies = movies.merge(tag_data, on="movieId", how="left")
