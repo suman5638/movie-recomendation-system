@@ -13,10 +13,10 @@ OMDB_API_KEY = "eae729f3" # Replace with your actual OMDB API key
 
 
 # Load datasets
-movies = pd.read_csv("movies.csv")
-ratings = pd.read_csv("ratings.csv")
-tags = pd.read_csv("tags.csv")
-links =pd.read_csv("links.csv")
+movies = pd.read_csv("movies[1].csv")
+ratings = pd.read_csv("ratings[1].csv")
+tags = pd.read_csv("tags[1].csv")
+links =pd.read_csv("links[1].csv")
 
 # Merge imdbId into movies DataFrame
 movies = movies.merge(links[['movieId', 'imdbId']], on='movieId', how='left')
