@@ -2,3 +2,6 @@ streamlit
 numpy
 panda
 scikit-learn
+scipy
+requests
+Pillow
